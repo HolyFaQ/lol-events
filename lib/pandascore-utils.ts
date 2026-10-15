@@ -34,7 +34,8 @@ export const formatMatchTitle = (match: PandaScoreMatch): string => {
         return match.name;
     }
 
-    return `(${stage}) ${match.name}`;
+    const stageLabel = `(${stage})`;
+    return `${match.name} ${stageLabel}`;
 };
 
 export const mapPandaScoreOpponent = (
